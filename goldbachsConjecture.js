@@ -12,9 +12,9 @@ function getGoldbachsConjecture(n) {
 
       var primesSum = primes[i] + primes[j];
 
-      if (primesSum === n) {
+      if (primesSum === n - 1) {
         return [primes[i], primes[j]];
-      } else if (primesSum > n) {
+      } else if (primesSum > Math.sqrt(n)) {
         break;
       }
     }
